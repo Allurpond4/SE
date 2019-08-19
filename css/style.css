@@ -5,6 +5,16 @@
  *
  * Made By MaterializeCSS.com
  */
+ ul {
+   display: flex;
+ }
+
+ li {
+   list-style-type: none;
+   padding: 10px;
+   position: relative;
+ }
+ 
  page-footer{
     color: black;
  }
