@@ -5,6 +5,9 @@
  *
  * Made By MaterializeCSS.com
  */
+ page-footer{
+    color: black;
+ }
 div .carousel {
   padding: 8px;
 }
@@ -68,7 +71,7 @@ p {
 
 footer.page-footer {
   margin: 0;
-  background-color: black;
+
 }
 
 @media screen and (min-width: 768px) {
