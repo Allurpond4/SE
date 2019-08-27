@@ -1,5 +1,5 @@
 // JSON Document for login
-
+// Material Select Initialization
 $(function() {
 
    $(".input input").focus(function() {
