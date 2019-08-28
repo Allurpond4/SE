@@ -1,3 +1,9 @@
+$(function () {
+  $('.example-popover').popover({
+    container: 'body'
+  })
+})
+
 (function($){
   $(function(){
 
