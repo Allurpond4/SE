@@ -5,6 +5,19 @@
  *
  * Made By MaterializeCSS.com
  */
+.modal{
+  position: fixed;
+  top: 50%;
+  left : 50%;
+  transform: translate(-50%,-50%);
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index:10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+}
+
  ul {
    display: flex;
  }
@@ -15,17 +28,17 @@
    position: relative;
  }
  
- page-footer{
-    color: black;
- }
+ 
 div .carousel {
   padding: 8px;
 }
 h1{
   border-bottom-style: solid;
   border-color: #311b92 ;
-  border-size:6px;
+  border-radius :6px;
   padding: 20px;
+  left: 10%;
+  right: 60%;
 
 }
 div .row{
