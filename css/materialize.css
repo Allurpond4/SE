@@ -4331,6 +4331,7 @@ nav .brand-logo {
   display: inline-block;
   font-size: 2.1rem;
   padding: 0;
+  
 }
 
 nav .brand-logo.center {
@@ -4753,6 +4754,7 @@ small {
 .card .card-title {
   font-size: 24px;
   font-weight: 300;
+  color: black;
 }
 
 .card .card-title.activator {

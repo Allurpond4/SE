@@ -6,9 +6,24 @@
  * Made By MaterializeCSS.com
  */
  /*---- NUMBER OF SLIDE CONFIGURATION ----*/
- body {
+ 
+
+.card-title{
+  color: #000;
+}
+
+
+ h1{
   padding: 0 30px;
-  background-color: #ccc;
+  color: #fff;
+ }
+
+
+ body {
+ 
+  background-image: url(pic/bg1.jpg);
+  font-family : "Ekkamai New";
+  font-weight: bold;
 }
 .wrapper {
   max-width: 240px;
@@ -313,7 +328,8 @@ p {
   font-size: inherit;
 }
 
-footer.page-footer {
+footer.page-
+ {
   margin: 0;
 
 }
