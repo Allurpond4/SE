@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php session_start(); ?><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -90,66 +90,7 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-    <div class="container">
-
-      <!-- Brand -->
-      <a class="navbar-brand" href="https://mdbootstrap.com/docs/jquery/" target="_blank">
-        <strong>M4U</strong>
-      </a>
-
-      <!-- Collapse -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Links -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-        <!-- Left -->
-		<ul class="navbar-nav mr-auto"></ul>
-
-
-        <!-- Right -->
-        <ul class="navbar-nav nav-flex-icons">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">หน้าแรก
-              <span class="sr-only">(current)</span>
-            </a>          
-		  </li>
-          <li class="nav-item">
-            <a class="nav-link" href="product.html">สินค้า</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="services.html">บริการ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="buy.html">สั่งซื้อ</a>
-          </li>
-		<!--Dropdown primary-->
-		<div class="dropdown">
-
-		  <!--Trigger-->
-			<li class="nav-item" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			   <a class="nav-link" href="">เกี่ยวกับเรา</a>
-			</li>
-
-		  <!--Menu-->
-		  <div class="dropdown-menu dropdown-primary">
-			<a class="dropdown-item" href="about1.html">เกี่ยวกับเรา</a>
-			<a class="dropdown-item" href="about2.html">รีวิวจากลูกค้า</a>
-			<a class="dropdown-item" href="about3.html">F &amp; A</a>
-		  </div>
-		</div>
-		<!--/Dropdown primary-->			
-          <li class="nav-item">
-            <a class="nav-link" href="">ติดต่อเรา</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <?php include_once('header.php'); ?>
   <br>
   <br>
   <br>

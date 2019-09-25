@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<?php session_start(); ?><!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>คำถามที่พบบ่อย</title>
+  <title>สั่งซื้อ</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <link href="css/all.css" rel="stylesheet" type="text/css">
@@ -25,188 +25,108 @@
 	  #dorp{
 		  color: #FFFFFF;
 	  }
-
-   
-    /* Popup container - can be anything you want */
-    .popup {
-      position: relative;
-      display: inline-block;
-      cursor: pointer;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-    
-    /* The actual popup */
-    .popup .popuptext {
-      visibility: hidden;
-      width: 160px;
-      background-color: #555b;
-      color: #fff;
-      text-align: center;
-      border-radius: 6px;
-      padding: 8px 0;
-      position: absolute;
-      z-index: 1;
-      bottom: 125%;
-      left: 50%;
-      margin-left: -80px;
-    }
-    
-    /* Popup arrow */
-    .popup .popuptext::after {
-      content: "";
-      position: absolute;
-      top: 100%;
-      left: 50%;
-      margin-left: -5px;
-      border-width: 5px;
-      border-style: solid;
-      border-color: #555 transparent transparent transparent;
-    }
-    
-    /* Toggle this class - hide and show the popup */
-    .popup .show {
-      visibility: visible;
-      -webkit-animation: fadeIn 1s;
-      animation: fadeIn 1s;
-    }
-    
-    /* Add animation (fade in the popup) */
-    @-webkit-keyframes fadeIn {
-      from {opacity: 0;} 
-      to {opacity: 1;}
-    }
-    
-    @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity:1 ;}
-    }
-    
+      #center {
+        align-items: center;
+        width:60%;
+}
   </style>
 </head>
 
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+<?php include_once('header.php'); ?>
+
+      <!--/First slide-->
+
+
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+
+  </div>
+  <!--/.Carousel Wrapper-->
+
+	
+    <br>
+    <br>
+  <!--Main layout-->
+  <main>
     <div class="container">
+		
+      <!--Section: Main info-->
+      <section class="mt-5 wow fadeIn">
 
-      <!-- Brand -->
-      <a class="navbar-brand" href="https://mdbootstrap.com/docs/jquery/" target="_blank">
-        <strong>M4U</strong>
-      </a>
+        <!--Grid row-->
+        <div class="row">
 
-      <!-- Collapse -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Links -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-        <!-- Left -->
-		<ul class="navbar-nav mr-auto"></ul>
-
-
-        <!-- Right -->
-        <ul class="navbar-nav nav-flex-icons">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">หน้าแรก
-              <span class="sr-only">(current)</span>
-            </a>          
-		  </li>
-          <li class="nav-item">
-            <a class="nav-link" href="product.html">สินค้า</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="services.html">บริการ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="buy.html">สั่งซื้อ</a>
-          </li>
-		<!--Dropdown primary-->
-		<div class="dropdown">
-
-		  <!--Trigger-->
-			<li class="nav-item" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			   <a class="nav-link" href="">เกี่ยวกับเรา</a>
-			</li>
-
-		  <!--Menu-->
-		  <div class="dropdown-menu dropdown-primary">
-			<a class="dropdown-item" href="about1.html">เกี่ยวกับเรา</a>
-			<a class="dropdown-item" href="about2.html">รีวิวจากลูกค้า</a>
-			<a class="dropdown-item" href="about3.html">F &amp; A</a>
-		  </div>
-		</div>
-		<!--/Dropdown primary-->			
-          <li class="nav-item">
-            <a class="nav-link" href="">ติดต่อเรา</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <br>
-  <br>
-  <br>
-<h1 class="text-center my-3">คำถามที่พบบ่อย</h1>
-<div class="container">
-    <button type="button" class="btn btn-info btn-lg btn-block" onclick="myQ1()" > <b>คำถามที่ 1 </b> </button> 
-    <p id="q1"></p>
-    <button type="button" class="btn btn-info btn-lg btn-block" onclick="myQ2()" > <b>คำถามที่ 2 </b> </button> 
-  <p id="q2"></p> 
-  <button type="button" class="btn btn-info btn-lg btn-block" onclick="myQ3()" > <b>คำถามที่ 3 </b> </button> 
-  <p id="q3"></p>
-  <button type="button" class="btn btn-info btn-lg btn-block" onclick="myQ4()" > <b>คำถามที่ 4 </b> </button> 
-  <p id="q4"></p>
-  <button type="button" class="btn btn-info btn-lg btn-block" onclick="myQ5()" > <b>คำถามที่ 5 </b> </button> 
-  <p id="q5"></p>
-  <button type="button" class="btn btn-info btn-lg btn-block" onclick="myQ6()" > <b>คำถามที่ 6 </b> </button> 
-  <p id="q6"></p>
-</div>
-
-
-
-
-
-
-
-
-<script>
-    function myQ1() {
-      document.getElementById("q1").innerHTML = "Anwser1";
-     
-    }
-    function myQ2() {
-     
-      document.getElementById("q2").innerHTML = "Anwser2";
+		  <!--Main layout-->
+		  <main>
+			<div class="container">
+                <h2 class="h2 mb-2"><strong>ขั้นตอนและวิธีการสั่งซื้อ</strong></h2><br>
+			  <!--Section: Products v.3-->
+			</div>
+          </main>
+         
+		  <!--Main layout-->
+        </div>
+        <!--Grid row-->
+      </section>
       
-    }
-    function myQ3() {
-      document.getElementById("q3").innerHTML = "Anwser3";
-     
-    }
-    function myQ4() {
-     
-      document.getElementById("q4").innerHTML = "Anwser4";
-      
-    }
-    function myQ5() {
-      document.getElementById("q5").innerHTML = "Anwser5";
-     
-    }
-    function myQ6() {
-     
-      document.getElementById("q6").innerHTML = "Anwser6";
-      
-    }
-    </script>
+      <!--Section: Main info-->
+      <div class="container">
+            <div class="row justify-content-center">
+                  <div class="col-8">
+                        <img src="img/product/buy1.png" class="img-fluid" alt="Responsive image" >
+             </div>
+             </div>
+             </div>
 
-
+             <br>
+             <main>
+                    <div class="container">
+                        <h2 class="h2 mb-2"><strong>ช่องทางการชำระเงิน</strong></h2><br>
+                      <!--Section: Products v.3-->
+                    </div>
+                   
+                  </main>
+                  
+                  <div class="card-deck">
+                        <div class="card">
+                          <img src="img\bank\bank1.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">ธนาคาร กรุงไทย</h5>
+                            <p class="card-text">ชื่อบัญชี :</p>
+                          </div>
+                          
+                        </div>
+                        <div class="card">
+                          <img src="img\bank\bank2.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">ธนาคาร กสิกรไทย</h5>
+                            <p class="card-text">ชื่อบัญชี :</p>
+                          </div>
+                          
+                        </div>
+                        <div class="card">
+                          <img src="img\bank\bank3.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">ธนาคาร กรุงเทพ</h5>
+                            <p class="card-text">ชื่อบัญชี :</p>
+                          </div>
+                          
+                          </div>
+                        </div>
+                      </div>
+    </main>
+    
+  <!--Main layout-->
 
 <!-- Footer -->
 <footer class="page-footer text-center font-small mt-4 wow fadeIn">

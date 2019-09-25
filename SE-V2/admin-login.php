@@ -31,17 +31,19 @@
       <div class="title">LOGIN</div><br><br>
 	   
     <!-- Form -->
-    <form class="text-center" style="color: #757575;" action="#!">
+    <form class="text-center" style="color: #757575;" action="checklogin.php" name="Login" method="post">
 
       <!-- Email -->
       <div class="md-form">
-        <input type="email" id="materialLoginFormEmail" class="form-control">
-        <label for="materialLoginFormEmail">E-mail</label>
+        <input type="text" id="materialLoginFormEmail" class="form-control" name="txtUsername"
+        required pattern="^[a-zA-Z0-9]+$" title="ภาษาอังกฤษหรือตัวเลขเท่านั้น" minlength="2">
+        <label for="materialLoginFormEmail">Username</label>
       </div>
 
       <!-- Password -->
       <div class="md-form">
-        <input type="password" id="materialLoginFormPassword" class="form-control">
+        <input type="password" id="materialLoginFormPassword" name="txtPassword" 
+        pattern="^[a-zA-Z0-9]+$" minlength="2" required class="form-control">
         <label for="materialLoginFormPassword">Password</label>
       </div>
 		<br>

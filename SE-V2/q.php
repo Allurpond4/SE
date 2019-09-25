@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php session_start(); ?><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -89,94 +89,65 @@
 
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-    <div class="container">
-
-      <!-- Brand -->
-      <a class="navbar-brand" href="https://mdbootstrap.com/docs/jquery/" target="_blank">
-        <strong>M4U</strong>
-      </a>
-
-      <!-- Collapse -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Links -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-        <!-- Left -->
-		<ul class="navbar-nav mr-auto"></ul>
-
-
-        <!-- Right -->
-        <ul class="navbar-nav nav-flex-icons">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">หน้าแรก
-              <span class="sr-only">(current)</span>
-            </a>          
-		  </li>
-          <li class="nav-item">
-            <a class="nav-link" href="product.html">สินค้า</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="services.html">บริการ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="buy.html">สั่งซื้อ</a>
-          </li>
-		<!--Dropdown primary-->
-		<div class="dropdown">
-
-		  <!--Trigger-->
-			<li class="nav-item" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			   <a class="nav-link" href="">เกี่ยวกับเรา</a>
-			</li>
-
-		  <!--Menu-->
-		  <div class="dropdown-menu dropdown-primary">
-			<a class="dropdown-item" href="about1.html">เกี่ยวกับเรา</a>
-			<a class="dropdown-item" href="about2.html">รีวิวจากลูกค้า</a>
-			<a class="dropdown-item" href="about3.html">F &amp; A</a>
-		  </div>
-		</div>
-		<!--/Dropdown primary-->			
-          <li class="nav-item">
-            <a class="nav-link" href="">ติดต่อเรา</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<?php include_once('header.php'); ?>
   <br>
   <br>
   <br>
-<h1 class="text-center my-3">ติดต่อเรา</h1>
-
+<h1 class="text-center my-3">คำถามที่พบบ่อย</h1>
 <div class="container">
+    <button type="button" class="btn btn-info btn-lg btn-block" onclick="myQ1()" > <b>คำถามที่ 1 </b> </button> 
+    <p id="q1"></p>
+    <button type="button" class="btn btn-info btn-lg btn-block" onclick="myQ2()" > <b>คำถามที่ 2 </b> </button> 
+  <p id="q2"></p> 
+  <button type="button" class="btn btn-info btn-lg btn-block" onclick="myQ3()" > <b>คำถามที่ 3 </b> </button> 
+  <p id="q3"></p>
+  <button type="button" class="btn btn-info btn-lg btn-block" onclick="myQ4()" > <b>คำถามที่ 4 </b> </button> 
+  <p id="q4"></p>
+  <button type="button" class="btn btn-info btn-lg btn-block" onclick="myQ5()" > <b>คำถามที่ 5 </b> </button> 
+  <p id="q5"></p>
+  <button type="button" class="btn btn-info btn-lg btn-block" onclick="myQ6()" > <b>คำถามที่ 6 </b> </button> 
+  <p id="q6"></p>
+</div>
 
-    <h2>บริษัท แมน ฟอร์ ยู 2012 จำกัด </h2>
-    <p>
-      2316 ถ.ประชาสงเคราะห์ ตรงข้ามซอยประชาสงเคราะห์ 29 แขวงดินแดง กทม. 10400
-    </p>
-    <p>
-      Tel : xx-xxx-xxx <br />
-      Facebook : <br />
-      Line : <br />
-      E-mail : <br />
-    </p>
-    <hr class="my-5">
-  </div>
-  
-  
-      <div class="container">
-          <div class="row justify-content-center">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1937.5146551851792!2d100.56162548049807!3d13.777106002211836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29e9d3aeb819b%3A0xfcff8cd64464ea64!2z4LiL4Lit4LiiIOC4m-C4o-C4sOC4iuC4suC4quC4h-C5gOC4hOC4o-C4suC4sOC4q-C5jCAyOSDguYHguILguKfguIcg4LiU4Li04LiZ4LmB4LiU4LiHIOC5gOC4guC4lSDguJTguLTguJnguYHguJTguIcg4LiB4Lij4Li44LiH4LmA4LiX4Lie4Lih4Lir4Liy4LiZ4LiE4LijIDEwNDAw!5e0!3m2!1sth!2sth!4v1566919276998!5m2!1sth!2sth" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="true" id="center"></iframe>
-      </div>
-      </div>
-      <div>
+
+
+
+
+
+
+
+<script>
+    function myQ1() {
+      document.getElementById("q1").innerHTML = "Anwser1";
+     
+    }
+    function myQ2() {
+     
+      document.getElementById("q2").innerHTML = "Anwser2";
+      
+    }
+    function myQ3() {
+      document.getElementById("q3").innerHTML = "Anwser3";
+     
+    }
+    function myQ4() {
+     
+      document.getElementById("q4").innerHTML = "Anwser4";
+      
+    }
+    function myQ5() {
+      document.getElementById("q5").innerHTML = "Anwser5";
+     
+    }
+    function myQ6() {
+     
+      document.getElementById("q6").innerHTML = "Anwser6";
+      
+    }
+    </script>
+
+
+
 <!-- Footer -->
 <footer class="page-footer text-center font-small mt-4 wow fadeIn">
 
