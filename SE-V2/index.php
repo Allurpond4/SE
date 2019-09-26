@@ -363,31 +363,31 @@
         
         <div class="card-deck" >
             <div class="card" style="width: 12rem;">
-              <img src="img\product\1.jpg" class="card-img-top" id="zoom"  alt="...">
+              <img src="img\product\1.jpg" class="card-img-top"  alt="...">
               <div class="card-body">
                 <h5 class="card-title">เสื้อโปโล</h5>  
               </div>
             </div>
             <div class="card" style="width: 12rem;">
-              <img src="img\product\1.jpg" class="card-img-top" id="zoom"  alt="...">
+              <img src="img\product\1.jpg" class="card-img-top"   alt="...">
               <div class="card-body">
                 <h5 class="card-title">เสื้อยืด</h5>
               </div>
             </div>
             <div class="card" style="width: 12rem;">
-              <img src="img\product\1.jpg" class="card-img-top"id="zoom"  alt="...">
+              <img src="img\product\1.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">เสื้อเจ็คเก็ต</h5>
               </div>
             </div>
             <div class="card" style="width: 12rem;">
-                <img src="img\product\1.jpg" class="card-img-top"id="zoom"  alt="...">
+                <img src="img\product\1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">เสื้อสูท</h5>
                 </div>
               </div>
               <div class="card" style="width: 12rem;">
-                  <img src="img\product\1.jpg" class="card-img-top"  id="zoom" alt="...">
+                  <img src="img\product\1.jpg" class="card-img-top"  alt="...">
                   <div class="card-body">
                     <h5 class="card-title">หมวก</h5>
                   </div>
@@ -416,7 +416,7 @@
           <div class="row">
           <div class="col-sm-6">
         <div class="card bg-dark text-white">
-          <img src="img/size1.jpg" id="zoom"class="card-img" alt="...">
+          <img src="img/size1.jpg" class="card-img" alt="...">
           
         </div>
         </div>
@@ -424,7 +424,7 @@
       
           <div class="col-sm-6">
         <div class="card bg-dark text-white">
-          <img src="img/size2.jpg" id="zoom" class="card-img" alt="...">
+          <img src="img/size2.jpg" class="card-img" alt="...">
           
         </div>
         </div>
