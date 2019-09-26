@@ -402,13 +402,8 @@
       </section>
       <!--Section: Main info-->
 		
-      <hr class="my-5">
-      <main>
-      <div class="container">
-          <h2 class="h2 mb-2"><strong>ชนิดผ้า</strong></h2><br>
-          
-        </div>
-      </main>
+      
+      
       <main>
       <hr class="mb-5">
         <h2 class="h2 mb-2"><strong>ไซต์เสื้อ</strong></h2><br>

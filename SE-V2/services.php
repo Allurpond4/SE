@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>คำถามที่พบบ่อย</title>
+  <title>บริการ</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <link href="css/all.css" rel="stylesheet" type="text/css">
@@ -94,11 +94,40 @@
   <br>
   <br>
   <br>
-<h1 class="text-center my-3">คำถามที่พบบ่อย</h1>
+  <br>
+  <br>
+  <br>
 
 
 
-
+<main>
+<section>
+<div class="container">
+<div class="row justify-content-md-center">
+  
+    <div class="col-6">
+      <div class="card" style="width: 34rem;">
+        <img src="img\cover\bg1.jpg" class="card-img-top" alt="...">
+      </div>
+    </div>
+    <div class="col-4">
+    <div class="card" style="width: 16rem; height:auto">
+        <img src="img\cover\bg2.jpg" class="card-img-top" alt="...">
+      </div>
+      <br>
+      
+      <div class="card" style="width: 16rem;">
+        <img src="img\cover\bg3.jpg" class="card-img-top" alt="...">
+      </div>
+    </div>
+    
+  </div>
+<br>
+<h1 class="text-center my-3">บริการ</h1>
+<hr class="my-5">
+</div>
+</section>
+</main>
 
 
 

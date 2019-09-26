@@ -83,6 +83,9 @@
       from {opacity: 0;}
       to {opacity:1 ;}
     }
+    .bg1{
+      background-color:#e0ebeb;
+    }
     
   </style>
 </head>
@@ -112,14 +115,15 @@
       <!-- Text -->
       <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem perspiciatis voluptatum a, quo nobis, non commodi quia repellendus sequi nulla voluptatem dicta reprehenderit, placeat laborum ut beatae ullam suscipit veniam.
       </p>
-  
-     
     </div>
   
-  </div>
+    <hr class="my-5">
+  
+    
   <!-- Card -->
-  <hr class="my-5">
+  
    <div class="container">
+   <h1 class="" >ส่วนหนึ่งของลูกค้าที่ไว้วางใจเรา</h1>
      <!-- Card deck -->
 <div class="card-deck">
 
@@ -142,8 +146,7 @@
         <!--Text-->
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-        <button type="button" class="btn btn-light-blue btn-md">Read more</button>
-  
+        
       </div>
   
     </div>
@@ -168,7 +171,7 @@
         <!--Text-->
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-        <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+        
   
       </div>
   
@@ -194,7 +197,7 @@
         <!--Text-->
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-        <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+        
   
       </div>
   
@@ -203,6 +206,7 @@
   
   </div>
   <!-- Card deck --><!-- Card deck -->
+
 <div class="card-deck">
 
     <!-- Card -->
@@ -224,7 +228,7 @@
         <!--Text-->
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-        <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+       
   
       </div>
   
@@ -250,7 +254,7 @@
         <!--Text-->
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-        <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+       
   
       </div>
   
@@ -276,7 +280,7 @@
         <!--Text-->
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-        <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+       
   
       </div>
   
@@ -286,6 +290,8 @@
   </div>
   <!-- Card deck -->
    </div>
+
+   
 <!-- Footer -->
 <footer class="page-footer text-center font-small mt-4 wow fadeIn">
 
