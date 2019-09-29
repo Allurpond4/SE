@@ -1,9 +1,25 @@
-<?php
+<?php session_start(); ?><?php
 	include('conn.php');
 	$ID = $_GET['TId'];
- 	$strSQL = "SELECT * FROM polo WHERE Id=$ID";
+ 	$strSQL = "SELECT * FROM polo WHERE ID=$ID
+	 UNION
+	  SELECT *  FROM hat WHERE ID=$ID
+	 UNION
+	  SELECT *  FROM apron WHERE ID=$ID
+	  UNION
+	  SELECT *  FROM jacket WHERE ID=$ID
+	 UNION
+	  SELECT *  FROM pants WHERE ID=$ID
+	  UNION
+	  SELECT *  FROM sport WHERE ID=$ID
+	 UNION
+	  SELECT *  FROM suits WHERE ID=$ID
+	  UNION
+	  SELECT *  FROM tshirt WHERE ID=$ID
+	 UNION
+	  SELECT *  FROM umbrella WHERE ID=$ID";
 	$objQuery = mysql_query($strSQL);
-	
+	 
 ?>
 
 
@@ -72,7 +88,28 @@
 			}else if($title=="สีม่วง"){
 				$a10 = "selected";
 			}
-						
+			$s=$objResult['type'];
+			if($s=="สีดำ"){
+				$sel1 = "selected";
+			}else if(s=="สีขาว"){
+				$sel2 = "selected";
+			}else if(s=="สีเทา"){
+				$sel3 = "selected";
+			}else if(s=="สีแดง"){
+				$sel4 = "selected";
+			}else if($s=="สีฟ้า"){
+				$sel5 = "selected";
+			}else if($s=="สีเหลือง"){
+				$sel6 = "selected";
+			}else if($s=="สีเขียว"){
+				$sel7 = "selected";
+			}else if($s=="สีน้ำตาล"){
+				$sel8 = "selected";
+			}else if($s=="สีชมพู่"){
+				$sel9 = "selected";
+			}else if($s=="สีม่วง"){
+				$a10 = "selected";
+			}		
 
 
 					?> 
@@ -101,7 +138,7 @@
 					</tr>
 					
 					<tr>
-						<td> หลักสูตรที่อบรม : </td>
+						<td> รายละเอียด : </td>
 						<td colspan="2"><textarea name="des"  cols="40" rows="5" class="form-control" ><? echo $objResult['Description']; ?></textarea></td>
 					</tr>
 					<tr>

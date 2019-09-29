@@ -1,5 +1,6 @@
 <?php session_start(); ?>
 <?php
+header('Content-Type: text/html; charset=utf-8');
   // Create database connection
   $db = mysqli_connect("localhost", "root", "123456789", "e-commerce");
   // Initialize message variable
@@ -66,7 +67,7 @@
   	}
 	  
 	 echo "<script>alert('เพิ่มข้อมูลสินค้าเสร็จสิ้น');</script>";
-	 echo "<script>window.location='admin-product-management1.php'</script>";
+	 echo "<script>window.location='product.php'</script>";
   }
 
 

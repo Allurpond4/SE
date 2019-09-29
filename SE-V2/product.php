@@ -1,4 +1,5 @@
-<?php session_start(); ?><!DOCTYPE html>
+<?php session_start(); 
+header('Content-Type: text/html; charset=utf-8');?><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -186,10 +187,10 @@
 
 
 				</div>
-				<!--Grid row-->
+		
 
 			  </section>
-			  <!--Section: Products v.3-->
+			
 			</div>
 		  </main>
 		  <!--Main layout-->

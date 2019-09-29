@@ -1,4 +1,5 @@
 <?php
+header('Content-Type: text/html; charset=utf-8');
 //fetch.php
 $connect = mysqli_connect("localhost", "root", "123456789", "e-commerce");
  session_start();
@@ -13,7 +14,39 @@ if(isset($_POST["query"]))
 {
  $search = mysqli_real_escape_string($connect, $_POST["query"]);
  $query = "
-  SELECT * FROM polo 
+ SELECT * FROM polo
+ WHERE Name LIKE '%".$search."%'
+ OR Color LIKE '%".$search."%' 
+ UNION
+  SELECT *  FROM hat
+  WHERE Name LIKE '%".$search."%'
+  OR Color LIKE '%".$search."%' 
+ UNION
+  SELECT *  FROM apron
+  WHERE Name LIKE '%".$search."%'
+  OR Color LIKE '%".$search."%' 
+  UNION
+  SELECT *  FROM jacket
+  WHERE Name LIKE '%".$search."%'
+  OR Color LIKE '%".$search."%' 
+ UNION
+  SELECT *  FROM pants
+  WHERE Name LIKE '%".$search."%'
+  OR Color LIKE '%".$search."%' 
+  UNION
+  SELECT *  FROM sport
+  WHERE Name LIKE '%".$search."%'
+  OR Color LIKE '%".$search."%' 
+ UNION
+  SELECT *  FROM suits
+  WHERE Name LIKE '%".$search."%'
+  OR Color LIKE '%".$search."%' 
+  UNION
+  SELECT *  FROM tshirt
+  WHERE Name LIKE '%".$search."%'
+  OR Color LIKE '%".$search."%' 
+ UNION
+  SELECT *  FROM umbrella 
   WHERE Name LIKE '%".$search."%'
   OR Color LIKE '%".$search."%' 
   
@@ -23,7 +56,24 @@ if(isset($_POST["query"]))
 else
 {
  $query = "
-  SELECT * FROM polo  ORDER BY Name
+ SELECT * FROM polo
+UNION
+ SELECT *  FROM hat
+UNION
+ SELECT *  FROM apron
+ UNION
+ SELECT *  FROM jacket
+UNION
+ SELECT *  FROM pants
+ UNION
+ SELECT *  FROM sport
+UNION
+ SELECT *  FROM suits
+ UNION
+ SELECT *  FROM tshirt
+UNION
+ SELECT *  FROM umbrella
+ 
  ";
 }
 $result = mysqli_query($connect, $query);
