@@ -35,15 +35,10 @@
           <li class="nav-item">
             <a class="nav-link" href="buy.php">สั่งซื้อ</a>
           </li>
-		<!--Dropdown primary-->
 		<div class="dropdown">
-
-		  <!--Trigger-->
 			<li class="nav-item" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 			   <a class="nav-link" href="">เกี่ยวกับเรา</a>
 			</li>
-
-		  <!--Menu-->
 		  <div class="dropdown-menu dropdown-primary">
 			<a class="dropdown-item" href="about1.php">เกี่ยวกับเรา</a>
 			<a class="dropdown-item" href="about2.php">รีวิวจากลูกค้า</a>
@@ -67,7 +62,7 @@
 			   <a class="nav-link" href="">ระบบการจัดการสินค้า</a>
 			</li>
 		  <div class="dropdown-menu dropdown-primary">
-			<a class="dropdown-item" href="product.php">จัดการสินค้า</a>
+			<a class="dropdown-item" href="product.php?i=5"  >จัดการสินค้า</a>
 			<a class="dropdown-item" href="add_product.php">เพิมสินค้า</a>
       <a class="dropdown-item" href="admin-quotation.php">ใบเสนอราคา</a>
       <a class="dropdown-item" href="Temporary Delivery.php">บิลส่งของชั่วคราว</a>

@@ -67,7 +67,7 @@ header('Content-Type: text/html; charset=utf-8');
   	}
 	  
 	 echo "<script>alert('เพิ่มข้อมูลสินค้าเสร็จสิ้น');</script>";
-	 echo "<script>window.location='product.php'</script>";
+	 
   }
 
 

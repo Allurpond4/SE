@@ -59,7 +59,9 @@ header('Content-Type: text/html; charset=utf-8');?><!DOCTYPE html>
 
 <body>
 
-<?php include_once('header.php'); ?>
+<?php include_once('header.php');
+$er = $_GET['i']; $GLOBALS["ty"] = $er; ;
+ ?>
 
     <!--Carousel Wrapper-->
     <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
@@ -222,14 +224,11 @@ header('Content-Type: text/html; charset=utf-8');?><!DOCTYPE html>
           quasi, veritatis totam voluptas nostrum.</p>
 
       </div>
-      <!-- Grid column -->
 
       <hr class="clearfix w-100 d-md-none">
 
-      <!-- Grid column -->
       <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
 
-        <!-- Links -->
         <h5 class="font-weight-bold text-uppercase mb-4">Menu</h5>
 
         <ul class="list-unstyled">

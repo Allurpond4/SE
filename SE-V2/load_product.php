@@ -2,7 +2,10 @@
 header('Content-Type: text/html; charset=utf-8');
 //fetch.php
 $connect = mysqli_connect("localhost", "root", "123456789", "e-commerce");
- session_start();
+
+if ($ty == 5){
+ session_start(); 
+}
 if($_SESSION['UserID']!=""){
 	if($_SESSION['status']=="ADMIN"){
 		 $hid = "false";

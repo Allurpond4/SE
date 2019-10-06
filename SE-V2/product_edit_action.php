@@ -49,7 +49,7 @@ include('conn.php');
 		$target = "productimg/".basename($image);
 		move_uploaded_file($_FILES['changePic']['tmp_name'], $target);
 	
-		$update ="UPDATE polo SET Name='$name',Description='$des',Color='$color',Img='$image' WHERE ID=$id";	
+		$update ="UPDATE $w SET Name='$name',Description='$des',Color='$color',Img='$image' WHERE ID=$id";	
   	}
 	else {
 		$update ="UPDATE $w SET Name='$name',Description='$des',Color='$color' WHERE ID=$id ";

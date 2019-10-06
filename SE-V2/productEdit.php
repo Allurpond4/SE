@@ -1,6 +1,12 @@
 <?php session_start(); ?><?php
 	include('conn.php');
 	$ID = $_GET['TId'];
+	if($_SESSION['UserID']!=""){
+		if($_SESSION['status']=="ADMIN"){
+			 $hid = "false";
+		 }else $hid = "hidden";
+	}else $hid = "hidden";
+	
  	$strSQL = "SELECT * FROM polo WHERE ID=$ID
 	 UNION
 	  SELECT *  FROM hat WHERE ID=$ID
@@ -88,28 +94,26 @@
 			}else if($title=="สีม่วง"){
 				$a10 = "selected";
 			}
-			$s=$objResult['type'];
-			if($s=="สีดำ"){
-				$sel1 = "selected";
-			}else if(s=="สีขาว"){
-				$sel2 = "selected";
-			}else if(s=="สีเทา"){
-				$sel3 = "selected";
-			}else if(s=="สีแดง"){
-				$sel4 = "selected";
-			}else if($s=="สีฟ้า"){
-				$sel5 = "selected";
-			}else if($s=="สีเหลือง"){
-				$sel6 = "selected";
-			}else if($s=="สีเขียว"){
-				$sel7 = "selected";
-			}else if($s=="สีน้ำตาล"){
+			$s=$objResult['ID'];
+			if($s >= 8000){
 				$sel8 = "selected";
-			}else if($s=="สีชมพู่"){
+			}else if($s >= 7000){
+				$sel7 = "selected";
+			}else if($s >= 6000){
+				$sel6 = "selected";
+			}else if($s >= 5000){
+				$sel5 = "selected";
+			}else if($s >= 4000){
+				$sel4 = "selected";
+			}else if($s >= 3000){
 				$sel9 = "selected";
-			}else if($s=="สีม่วง"){
-				$a10 = "selected";
-			}		
+			}else if($s >= 2000){
+				$sel2 = "selected";
+			}else if($s >= 1000){
+				$sel3 = "selected";
+			}else if($s >= 1){
+				$sel1 = "selected";
+			}
 
 
 					?> 
